@@ -5,17 +5,25 @@
        <title>Reservia</title>
     </head>
     <body>
-        <div id="bloc_page"
+        <div id="bloc_page">
             <header>
-                <img src="" alt="" />
-                <nav></nav>
-                <div></div>
+                <img src="image/Logo_Reservia.png" alt="Logo_Reservia" />
+                <nav>
+                    <a href="#Hebergement">Hébergements</a>
+                    <a href="#Activite">Activités</a>
+                </nav>
+                <div>S'inscrire</div>
             </header>
             <section>
                 <article>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-                    <form></form>
+                    <form method="post" action="">
+                        <p>
+                            <input type="text" name="Lieu_cherché" maxlength="50" placeholder="Marseille, France"  />
+                            <input type="submit" value="Rechercher" />
+                        </p>
+                    </form>
                     <div>
                         <h3>Filtres</h3>
                         <figure>
@@ -43,7 +51,7 @@
             </section>
             <section>
                 <article>
-                    <h1>Hébergements à Marseille</h1>
+                    <h1 id="Hebergement">Hébergements à Marseille</h1>
                     <div>
                         <img src="" alt="">
                         <h4>Auberge de la cannebière</h4>
@@ -80,7 +88,7 @@
                         <p>Nuit à partir de 96€</p>
                         
                     </div>
-                    <p></p>
+                    <p>Afficher plus</p>
                 </article>
                 <aside>
                     <h1>Les plus populaires</h1>
@@ -106,7 +114,7 @@
                     </div>                    
                 </aside>
             </section>
-            <div>
+            <div id="Activite">
                 <h1>Activités à Marseille</h1>
                 <figure>
                     <img src="" alt="" />
