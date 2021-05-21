@@ -1,11 +1,4 @@
-@font-face
+body
 {
-    font-family:'Raleway';
-    src: url(police/Raleway_Regular.ttf) format(ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-#bloc_de_page
-{
-    font-family: 'Raleway', 'Arial', 'Times New Roman', 'Serif'
+    font-family: 'Raleway', 'Sans-Serif';
 }
