@@ -30,6 +30,13 @@ h3
     font-weight: bold;
 }
 
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 /*Style header*/
 
 header
@@ -41,6 +48,7 @@ header
 #logo
 {
     width: 200px;
+    justify-self: left;
     height: auto;
     padding-top: 40px;
 }
@@ -48,15 +56,18 @@ header
 nav
 {
     display: flex;
+    justify-content: space-around;
+    position: relative;
+    left:-75px;
 }
 
 nav ul
 {
     display: flex;
+    justify-content: space-around;
     list-style-type: none;
     flex-direction: row;
     width: 400px;
-    justify-content: space-between;
 }
 
 nav li
@@ -170,7 +181,7 @@ form div
 {
     color: var(--bleu);
     background-color: var(--bleuclair);
-    width: 45px;
+    width: 50px;
     height: 50px;
     border-radius: 25px;
     display: flex;
@@ -200,13 +211,188 @@ form div
 
 /*Hébergement*/
 
-#hebergement
+#Hebergement
 {
     background-color: var(--gris);
-    display: flex;
     border-radius: 15px;
-    width: 65%;
-    margin: 15px;
+    width: 63%;
+    padding: 25px 0px 0px 20px;
+    height: 640px;
+    width: 850px;
+    margin: 15px 0px;
+}
+
+#Hebergement div
+{
+    width: 244px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    padding-bottom: 6px;
+    box-shadow: 0px 9px 30px -15px rgb(77, 76, 76)
+}
+
+article img
+{
+    border-radius: 20px 20px 0px 0px;
+    border: solid white 5px;
+    object-fit: cover;
+    max-width: 235px;
+    max-height: 115px;
+}
+
+article h4
+{
+    margin: 3px 8px;
+}
+
+#Hebergement p
+{
+    margin:3px 8px;
+}
+
+#Hebergement i
+{
+    margin: 3px 0px 0px 8px;
+    color: var(--bleu);
+    size: 75%;
+}
+
+article span i
+{
+    color: var(--gris);
+}
+
+/*Grid*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(15px, auto);
+  }
+
+.one
+{
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.two
+{
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.three
+{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.four
+{
+    grid-column: 3/3;
+    grid-row: 2;
+}
+
+.five
+{
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.six
+{
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+.seven
+{
+    grid-column: 3/3;
+    grid-row: 3;
+}
+
+.eight
+{
+    grid-column: 1/3;
+    grid-row: 4;
+    font-weight: bolder;
+}
+
+/*Populaire*/
+
+#logement
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+#Populaire
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--gris);
+    border-radius: 25px;
+    justify-content: space-evenly;
+    padding-bottom: 6px;
+    width: 30%;
+    height: 640px;
+    padding: 25px 0px 0px 20px;
+    margin:15px 15px;
+}
+
+#Populaire div
+{
+    display: flex;
+    box-shadow: 0px 9px 30px -15px rgb(77, 76, 76);
+    background-color: white;
+    width: 340px;
+}
+
+#titre_populaire
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    background-color: var(--gris);
+}
+
+#icone_populaire
+{
+    align-self:stretch;
+}
+
+#Populaire img
+{
+    width: 125px;
+    height: 175px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#Populaire a
+{
+    display: flex;
+}
+
+.populaire_legende
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 175px;
+}
+
+.populaire_legende i
+{
+    display: flex;
+    flex-direction: row;
 }
 
 /*Footer*/
