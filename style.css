@@ -36,7 +36,6 @@ img{
     object-fit: cover;
 }
 
-
 /*Style header*/
 
 header
@@ -261,7 +260,7 @@ article h4
     size: 75%;
 }
 
-article span i
+#Hebergement span i
 {
     color: var(--gris);
 }
@@ -328,7 +327,7 @@ article span i
 
 #logement
 {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -347,12 +346,12 @@ article span i
     margin:15px 15px;
 }
 
-#Populaire div
+.logement_populaire
 {
     display: flex;
     box-shadow: 0px 9px 30px -15px rgb(77, 76, 76);
-    background-color: white;
-    width: 340px;
+    width: 370px;
+    border-radius: 20px;
 }
 
 #titre_populaire
@@ -361,24 +360,40 @@ article span i
     justify-content: space-between;
     align-items: center;
     width: 340px;
-    background-color: var(--gris);
+    background: var(--gris);
+    position: relative;
+    bottom: 25px;
 }
 
 #icone_populaire
 {
-    align-self:stretch;
+    background:var(--gris);
+    position: relative;
+    left: 24px;
 }
 
 #Populaire img
 {
     width: 125px;
-    height: 175px;
+    height: 160px;
     border-radius: 20px 0px 0px 20px;
+    border: solid white 5px;
 }
 
 #Populaire a
 {
     display: flex;
+    width: 370px;
+}
+
+#Populaire a i
+{
+    color: var(--bleu);
+}
+
+#Populaire span i
+{
+    color: var(--gris);
 }
 
 .populaire_legende
@@ -386,13 +401,24 @@ article span i
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 175px;
+    max-height: 160px;
+    width: 370px;
+    background: white;
+    border-radius: 0px 20px 20px 0px;
+    border: solid white 5px;
 }
 
-.populaire_legende i
+.populaire_legende div
 {
     display: flex;
     flex-direction: row;
+}
+
+/*Activité*/
+
+#Activite img
+{
+
 }
 
 /*Footer*/
