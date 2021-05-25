@@ -57,7 +57,7 @@ nav
     display: flex;
     justify-content: space-around;
     position: relative;
-    left:-75px;
+    left:-40px;
 }
 
 nav ul
@@ -370,6 +370,7 @@ article h4
     background:var(--gris);
     position: relative;
     left: 24px;
+    size: 200%;
 }
 
 #Populaire img
@@ -416,9 +417,68 @@ article h4
 
 /*Activité*/
 
-#Activite img
+#bloc_activite
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
 
+#Activite
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    position:relative;
+    right: 8px;
+}
+
+#Activite figure
+{
+    width: 300px;
+    box-shadow: 0px 9px 30px -15px rgb(77, 76, 76);
+    border-radius: 25px;
+    margin: 16px 31px;
+}
+
+figcaption
+{
+    border-radius: 0px 0px 25px 25px;
+    height: 60px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    margin-left: 19px;
+}
+
+.bloc_secondaire
+{
+    display:flex;
+    flex-direction: column;
+}
+
+figure img
+{
+    border-radius: 25px 25px 0px 0px;
+    width:300px;
+}
+
+.grand
+{
+    height: 385px;
+}
+
+.moyen
+{
+    height: 162px;
+}
+
+.petit
+{
+    height: 122px;
 }
 
 /*Footer*/
@@ -426,4 +486,6 @@ article h4
 footer
 {
     display: flex;
+    width:100%;
+    justify-content: space-between;
 }
