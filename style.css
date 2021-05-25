@@ -19,8 +19,8 @@ a
 h1
 {
     font-size: 22px;
-    font-weight: bold;
     margin: 0px;
+    font-weight: bolder;
 }
 
 h3
@@ -39,6 +39,11 @@ section
 {
     max-width: 1400px;
     margin: 0px 50px 0px 50px;
+}
+
+p strong
+{
+    font-weight: bold;
 }
 
 /*Style header*/
@@ -262,9 +267,11 @@ article h4
 
 #Hebergement i
 {
-    margin: 3px 0px 0px 8px;
+    margin: 3px 0px 0px 1px;
     color: var(--bleu);
     size: 75%;
+    position: relative;
+    left: 10px;
 }
 
 #Hebergement span i
@@ -379,7 +386,6 @@ article h4
     background:var(--gris);
     position: relative;
     left: 24px;
-    size: 200%;
 }
 
 #Populaire img
