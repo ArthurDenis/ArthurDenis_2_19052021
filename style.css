@@ -1,7 +1,7 @@
-body
+#corps_site
 {
     font-family: 'Raleway', 'Sans-Serif';
-    width: 100%;
+    width: auto;
     margin: -16px 0px;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,8 @@ h3
     font-weight: bold;
 }
 
-img{
+img
+{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -50,7 +51,7 @@ header
     display: flex;
     justify-content: space-between;
     max-width: 1400px;
-    margin: 0px 50px;
+    margin: -16px 50px 0px 50px;
 }
 
 #logo
@@ -64,15 +65,14 @@ header
 nav
 {
     display: flex;
-    justify-content: space-around;
-    position: relative;
-    left:-40px;
+    justify-content: flex-end;
+    flex: 3;
 }
 
 nav ul
 {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     list-style-type: none;
     flex-direction: row;
     width: 400px;
@@ -86,7 +86,18 @@ nav li
 
 #nav_hebergement
 {
-    border-top: solid 3px #0065FC
+    border-top: solid 3px #0065FC;
+    margin-top: 8px;
+    position: relative;
+    left: 1em;
+}
+
+#nav_activite
+{
+    margin-top: 8px;
+    position:relative;
+    right: 1em;
+    border-top: solid 3px white;
 }
 
 #couleur_hebergement
@@ -96,13 +107,17 @@ nav li
 
 #inscription
 {
+    width: 5%;
+    padding-top: 45px;
     font-weight: bold;
     color: #0065FC;
+    border-top: solid 3px white;
+    margin-top: 20px;
 }
 
 /* Style Première section, recherche*/
 
-#recherche
+#Recherche
 {
     display: flex;
     flex-direction: column;
@@ -156,6 +171,13 @@ form div
     background-color: #0065FC;
 }
 
+#bloc_filtre
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #filtre
 {
     display: flex;
@@ -164,6 +186,14 @@ form div
     align-items: center;
     margin-top: 20px;
     font-weight: bolder;
+}
+
+#titre_filtre
+{
+    width: 5%;
+    margin: 18px 0px;
+    position: relative;
+    top: 1em;
 }
 
 #filtre a:hover
@@ -276,7 +306,7 @@ article h4
 
 /*Grid*/
 
-.wrapper {
+.conteneur {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0px;
@@ -432,9 +462,9 @@ article h4
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
+    width: auto;
     max-width: 1400px;
-    margin: 0px 50px;
+    margin: 0px 30px 0px 30px;
 }
 
 #Activite
@@ -445,15 +475,20 @@ article h4
     flex-wrap: nowrap;
     width: 100%;
     position:relative;
-    right: 8px;
+    left: 32px;
+}
+
+#titre_activite
+{
+    padding-left:25px;
 }
 
 #Activite figure
 {
-    width: 300px;
+    width: 310px;
     box-shadow: 0px 9px 30px -15px rgb(77, 76, 76);
     border-radius: 25px;
-    margin: 16px 31px;
+    margin: 12px 31px;
 }
 
 figcaption
@@ -475,7 +510,7 @@ figcaption
 figure img
 {
     border-radius: 25px 25px 0px 0px;
-    width:300px;
+    width:310px;
 }
 
 .grand
@@ -498,16 +533,315 @@ figure img
 footer
 {
     display: flex;
-    width:100%;
+    width:auto;
     justify-content: space-between;
     background-color: #F2F2F2;
     height: 215px;
     padding-top: 35px;
-    margin-top: 40px;
+    margin: 40px 0px 0px 0px;
 }
 
 footer div
 {
     margin-right: 200px;
     margin-left: 50px;
+}
+
+/* Media queries smartphone*/
+@media all and (max-width: 520px)
+
+{
+    body
+    {
+        margin: 0px;
+    }
+
+    #corps_site
+    {
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding:0px;
+    }
+
+    header
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin: 0px;
+    }
+
+    #logo
+    {
+        width: 6em;
+        height: auto;
+        padding-top: 25px;
+        object-fit: contain;
+        margin-left: 25px;
+    }
+
+    .menu :nth-child(2)
+    {
+        order: 3;
+    }
+
+    #inscription
+    {
+        width:auto;
+        padding-top: 25px;
+        margin-right: 25px;
+    }
+
+    nav
+    {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        width:100%;
+        padding:0px;
+
+    }
+
+    nav ul
+    {
+        width:100%;
+        margin:0px;
+        padding:0px;
+        
+    }
+    #nav_hebergement
+    {
+        width: 50%;
+        border-top: unset;
+        border-bottom: 3px solid #0065FC;
+        padding: 10px 0px 10px 0px;
+        position: unset;
+        justify-content: center;
+    }
+
+    #nav_activite
+    {
+        width: 50%;
+        border-top: unset;
+        border-bottom: 3px solid #F2F2F2;
+        padding: 10px 0px 10px 0px;
+        position: unset;
+        justify-content: center;
+    }
+
+    main
+    {
+        width:auto;
+    }
+
+    #Recherche
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    #iconegps
+    {
+        width: 10%;
+        height: 40px;
+    }
+
+    #barre_recherche
+    {
+        width:60%;
+        padding-left: unset;
+        text-align: center;
+    }
+
+    #lancement_recherche
+    {
+        width: 40%;
+    }
+
+    #filtre
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        position:unset;
+    }
+
+    .lien_filtre
+    {
+        margin: 2px 10px 2px 2px;
+        padding-right: 15px;
+    }
+
+    #logement
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        width: auto;
+        justify-content: flex-start;
+        margin: auto;
+    }
+
+    #Populaire
+    {
+        height: auto;
+        padding: 45px 0px 30px 0px;
+        width: 100%;
+        height:auto;
+        margin:auto;
+        border-radius: unset;
+    }
+
+    #titre_populaire
+    {
+        width:auto;
+        margin:0px 30px 0px 25px;
+        display: flex;
+        padding-right: 15px;
+    }
+
+    .logement_populaire
+    {
+        width: 90%;
+        height: auto;
+        margin:auto;
+        margin-bottom: 15px;
+    }
+
+    .populaire_legende
+    {
+        width:60%;
+        justify-content: unset;
+    }
+
+    .populaire_legende h4
+    {
+        margin: 5px;
+    }
+
+    .populaire_legende p
+    {
+        margin: 0px;
+        margin-bottom: 75px;
+    }
+
+    #Populaire img
+    {
+        width: 40%;
+    }
+
+    #Hebergement
+    {
+        height: auto;
+        width: 100%;
+        margin:0px;
+        padding:unset;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Hebergement div
+    {
+        width:90%;
+        height:auto;
+        margin:auto;
+        margin-top: 15px;
+    }
+
+    #Hebergement p
+    {
+        margin: 25px 0px 20px 20px;
+    }
+
+    #Hebergement h2
+    {
+        margin:25px 0px 10px 20px;
+    }
+
+    #Hebergement img
+    {
+        width:97%;
+        max-width: unset;
+        object-fit: cover;
+    }
+
+    #bloc_activite
+    {
+        width: auto;
+        margin: auto;
+        max-width:unset;
+    }
+
+    #titre_activite
+    {
+        margin-left:30px;
+    }
+
+    #Activite
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position:unset;
+        width: 90%;
+    }
+
+    #Activite figure
+    {
+        width:100%;
+        margin: 16px 20px;
+    }
+
+    figure img
+    {
+        width:100%;
+    }
+
+    .grand
+    {
+        height: 160px;
+    }
+
+    .moyen
+    {
+        height: 160px;
+    }
+
+    .petit
+    {
+        height: 160px;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        height: 500px;
+    }
+
+    footer div
+    {
+        margin: 0px;
+        padding:0px 0px 25px 25px;
+    }
+}
+
+
+/* Media queries tablette*/
+@media all and (max-width: 1280px)
+{
+
+
+
+
 }
