@@ -548,7 +548,7 @@ footer div
 }
 
 /* Media queries smartphone*/
-@media all and (max-width: 520px)
+@media (max-width: 760px)
 
 {
     body
@@ -838,7 +838,7 @@ footer div
 
 
 /* Media queries tablette*/
-@media all and (max-width: 1024px)
+@media (min-width: 761px)
 {
     #corps_site
     {
