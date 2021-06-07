@@ -838,10 +838,148 @@ footer div
 
 
 /* Media queries tablette*/
-@media all and (max-width: 1280px)
+@media all and (max-width: 1024px)
 {
+    #corps_site
+    {
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding:0px;
+    }
 
+    header
+    {
+        
+        justify-content:space-around;
+    }
 
+    #logement
+    {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content:center;
+        margin: auto;
+        width: auto;
+    }
 
+    #Hebergement
+    {
+        width: 95%;
+        overflow: hidden;
+        margin-right: 0px;
+    }
 
+    #Hebergement div
+    {
+        margin-right:1em;
+        width: 12em;
+        height: fit-content;
+    }
+
+    article img
+    {
+        width:95%;
+    }
+
+    #Populaire
+    {
+        height: auto;
+        padding: 45px 0px 30px 0px;
+        width: 60%;
+        height:auto;
+        margin:auto;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .logement_populaire
+    {
+        margin-bottom: 1em;
+    }
+
+    #bloc_activite
+    {
+        width: 90%;
+        margin: auto;
+        margin-top:1em;
+        max-width:unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    #titre_activite
+    {
+        width: 100%;
+    }
+
+    #Activite
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position:unset;
+        width: 100%;
+    }
+
+    .bloc_primaire
+    {
+        width:100%;
+    }
+
+    .bloc_secondaire
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        width:100%;
+    }
+
+    #Activite .bloc_secondaire figure
+    {
+        width:98%;
+        margin: 16px 10px;
+    }
+
+    #Activite .bloc_primaire figure
+    {
+        width:100%;
+        margin: 16px 10px;
+    }
+
+    figure img
+    {
+        width:100%;
+    }
+
+    .grand
+    {
+        height: 160px;
+    }
+
+    .moyen
+    {
+        height: 160px;
+    }
+
+    .petit
+    {
+        height: 160px;
+    }
+
+    footer
+    {
+        width:auto;
+    }
+
+    footer div
+    {
+        margin-right: 50px;
+        margin-left:50px;
+    }
 }
