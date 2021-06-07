@@ -838,7 +838,7 @@ footer div
 
 
 /* Media queries tablette*/
-@media (min-width: 761px)
+@media all and (min-width: 761px) and (max-width: 1024px)
 {
     #corps_site
     {
