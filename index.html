@@ -5,12 +5,14 @@
        <meta name="viewport" content="width=device-width initial-scale=1">
        <title>Reservia</title>
        <link rel="stylesheet" href="style.css" />
+       <!-- Logo -->
        <script src="https://kit.fontawesome.com/042e0ec27c.js" crossorigin="anonymous"></script>
+       <!-- Police -->
        <link rel="preconnect" href="https://fonts.gstatic.com">
        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&ampdisplay=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="corps_site">
+        <div id="corps_site"><!-- Contenant du site -->
             <header class="menu">
                 <img src="image/Logo_Reservia.png" alt="Logo_Reservia" id="logo"/>
                 <nav>
@@ -26,11 +28,13 @@
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <article>
                         <p>En plein centre ville ou en pleine nature</p>
+                        <!-- Recherche sur le site -->
                         <form method="post" action="lienfutur">
                             <div>
                                 <i class="fas fa-map-marker-alt" id="iconegps"></i>
                                 <input type="text" name="Lieu_cherché" maxlength="50" placeholder="Marseille, France" id="barre_recherche"  />
                                 <input type="submit" value="Rechercher" id="lancement_recherche" />
+                                <button id="loupe"><i class="fas fa-search"></i></button>
                             </div>
                         </form>
                         <div id="bloc_filtre">
@@ -49,6 +53,7 @@
                     </aside>
                 </section>
                 <div id="logement">
+                    <!-- Partie principal logement -->
                     <div id="div_hebergement">
                         <article id="Hebergement" class="conteneur">
                             <h2 class="one">Hébergements à Marseille</h2>
@@ -128,6 +133,7 @@
                         </article>
                     </div>
                     <div>
+                        <!-- Logement les plus populaires -->
                         <aside id="Populaire">
                             <div id="titre_populaire">
                                 <h2>Les plus populaires</h2>
