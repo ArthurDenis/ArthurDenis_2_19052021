@@ -1,3 +1,4 @@
+/* CSS Général*/
 #corps_site
 {
     font-family: 'Raleway', 'Sans-Serif';
@@ -44,7 +45,7 @@ p strong
     font-weight: bold;
 }
 
-/*Style header*/
+/*Style du header*/
 
 header
 {
@@ -115,7 +116,7 @@ nav li
     margin-top: 20px;
 }
 
-/* Style Première section, recherche*/
+/* Style Première section, recherche et info*/
 
 #Recherche
 {
@@ -156,6 +157,11 @@ form div
     border: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
+}
+
+#loupe
+{
+    display: none;
 }
 
 #lancement_recherche
@@ -304,7 +310,7 @@ article h4
     color: #F2F2F2;
 }
 
-/*Grid*/
+/*Grid pour hébergement*/
 
 .conteneur {
     display: grid;
@@ -520,12 +526,12 @@ figure img
 
 .moyen
 {
-    height: 167px;
+    height: 168px;
 }
 
 .petit
 {
-    height: 127px;
+    height: 128px;
 }
 
 /*Footer*/
@@ -551,6 +557,7 @@ footer div
 @media (max-width: 760px)
 
 {
+    /* Général smartphone*/
     body
     {
         margin: 0px;
@@ -565,7 +572,7 @@ footer div
         justify-content: flex-start;
         padding:0px;
     }
-
+    /* Header smartphone*/
     header
     {
         display: flex;
@@ -638,7 +645,7 @@ footer div
     {
         width:auto;
     }
-
+    
     #Recherche
     {
         display: flex;
@@ -657,14 +664,27 @@ footer div
 
     #barre_recherche
     {
-        width:60%;
+        width:80%;
         padding-left: unset;
         text-align: center;
     }
 
     #lancement_recherche
     {
-        width: 40%;
+        display: none;
+    }
+
+    #loupe
+    {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 15%;
+        border: none;
+        border-radius: 0px 15px 15px 0px;
+        background-color: #0065FC;
+        padding: 0px 0px 0px 0px;
     }
 
     #filtre
@@ -760,7 +780,7 @@ footer div
 
     #Hebergement p
     {
-        margin: 25px 0px 20px 20px;
+        margin: 25px 0px 20px 8px;
     }
 
     #Hebergement h2
@@ -981,5 +1001,35 @@ footer div
     {
         margin-right: 50px;
         margin-left:50px;
+    }
+}
+/* Media queries intermédiaire*/
+@media all and (min-width: 1025px) and (max-width: 1280px)
+{
+    #logement
+    {
+        max-width: 1280px;
+        margin: 0px 30px;
+    }
+
+    #bloc_activite
+    {
+    max-width: 1280px;
+    margin: 0px 15px 0px 15px;
+    }
+
+    #Activite
+    {
+        position:unset;
+    }
+
+    #Activite figure
+    {
+    width: 90%;
+    }
+    
+    figure img
+    {
+        width:100%
     }
 }
